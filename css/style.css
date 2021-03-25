@@ -20,6 +20,9 @@ input:focus {
 strong {
   color: #262626;
 }
+video{
+  width: 100%;
+}
 .barra-inferior {
   display: none;
 }
@@ -40,13 +43,11 @@ strong {
   border-bottom: 1px solid #dbdbdb;
   z-index: 2;
 }
-
 .logo {
   height: 30px;
   display: flex;
   align-items: center;
 }
-
 .logo img {
   width: 103px;
   margin-left: 15px;
@@ -63,14 +64,13 @@ strong {
   display: flex;
   justify-content: space-between;
 }
-
 .sidebar {
   width: 300px;
   height: 600px;
   background-color: #ffffff;
-  position: sticky;
+  position: fixed;
+  left: 65vw ;
 }
-
 .stories-box {
   width: 614px;
   height: 118px;
@@ -97,12 +97,10 @@ strong {
   right: 20px;
   z-index: 0;
 }
-
 .seta ion-icon {
   border-radius: 50%;
   text-shadow: 5px 5px 20px black;
 }
-
 .stories {
   height: 85px;
   display: flex;
@@ -113,7 +111,6 @@ strong {
   font-size: 12px;
   color: #262626;
 }
-
 .img-stories {
   background-image: url("../imagens/stories_background.jpg");
   background-size: cover;
@@ -123,7 +120,11 @@ strong {
   justify-content: center;
   align-items: center;
 }
-
+.img-stories img{
+height: 56px;
+width: 56px;
+border-radius: 50%;
+}
 .post {
   width: 614px;
   height: auto;
@@ -139,7 +140,6 @@ strong {
 .post-img {
   width: 100%;
 }
-
 .topo-post {
   height: 61px;
   width: 96%;
@@ -161,7 +161,6 @@ strong {
   width: 30px;
   margin-right: 10px;
 }
-
 .icones-bottom {
   display: flex;
   width: 96%;
@@ -185,13 +184,11 @@ strong {
   font-weight: bold;
   color: #000000;
 }
-
 .likes img {
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
-
 .user-sidebar {
   margin-top: 25px;
   display: flex;
@@ -200,7 +197,6 @@ strong {
 .legenda {
   color: #8e8e8e;
 }
-
 .user-name {
   margin-left: 17px;
   line-height: 20px;
@@ -212,12 +208,10 @@ strong {
   flex-direction: column;
   justify-content: space-between;
 }
-
 .sugestoes img {
   width: 36px;
   height: 36px;
 }
-
 .para-voce {
   width: 100%;
   font-size: 12px;
@@ -226,7 +220,6 @@ strong {
   display: flex;
   justify-content: space-between;
 }
-
 .ver-tudo {
   color: #262626;
   font-weight: bold;
@@ -240,7 +233,6 @@ strong {
 .legenda {
   font-size: 12px;
 }
-
 .seguir {
   display: flex;
   justify-content: space-between;
@@ -251,14 +243,15 @@ strong {
   font-weight: 500;
   color: #139ef2;
 }
-
+.user-img img{
+  border-radius: 50%;
+}
 .outros {
   color: #c7c7c7;
   font-size: 11px;
   font-weight: 400;
   margin-top: 25px;
 }
-
 @media (max-width: 935px) {
   .sidebar {
     display: none;
@@ -267,7 +260,6 @@ strong {
     width: 614px;
   }
 }
-
 @media (max-width: 614px) {
   .topo-mobile {
     display: flex;
@@ -327,7 +319,6 @@ strong {
     z-index: 1;
     background-color: #ffffff;
     border-top: 1px solid #dbdbdb;
-
     font-size: 25px;
   }
   .barra-inferior ion-icon {
